@@ -1,0 +1,48 @@
+/* Estilos para el h1 */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el h3 */
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el input */
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Estilos para el botón */
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: rgba(red, green, blue, alpha);
+  cursor: pointer;
+}
+
+/* Estilos para el h1 dentro del segundo div */
+div:nth-child(3) h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo dentro del segundo div */
+div:nth-child(3) p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los elementos de la lista */
+ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
