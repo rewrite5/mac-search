@@ -11,6 +11,14 @@ function App() {
     setVendor("");
   };
 
+  const handleSearch = async () => {
+    if (mac.trim() === "") {
+      alert("You are stupid the input should not be empty!");
+      return;
+    }
+    setVendor(await getMacVendor(mac));
+  };
+
   return (
     <div>
       <h1>Find MAC Address Vendors. Now.</h1>
@@ -22,9 +30,7 @@ function App() {
           type="text"
           placeholder="Waiting Mac ..."
         />
-        <button onClick={async () => setVendor(await getMacVendor(mac))}>
-          Search
-        </button>
+        <button onClick={handleSearch}>Search</button>
         <button onClick={clearMac}>Clear</button>
       </div>
       <h1 style={{ color: "red" }}>Vendor: {vendor}</h1>
